@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 600px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(36, 32, 39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 25px;
+}
+
+main{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     width: 480px;
+}
+
+#valor {
+    font-size: 16px;
+}
+
+input {
+    height: 20px;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    background-color: #DFDFDF;
+    margin-bottom: 10px;
+}
+
+#button {
+    background-color: green;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    user-select: none;
+}
+
+#button:hover {
+    background-color: rgb(18, 155, 18);
+    cursor: pointer;
+}
+
+.container-password {
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title {
+    color: white;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.password {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 500ms;
+}
+
+.password:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px ;
+    background-color: rgb(15,15,15);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 480px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 700ms;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 610px) {
+    img {
+        width: 360px;
+    }
+
+    main {
+        width: 320px;
+    }
+
+    .container-password {
+        width: 340px;
+    }
+
+    .password {
+        width: 320px;
+    }
+
+    .tooltip {
+        width: 320px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
